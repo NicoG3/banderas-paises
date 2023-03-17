@@ -5,9 +5,9 @@
 
 //document.addEventListener('DOMContentLoaded',()=> console.log('Hola desde consola'));
 
-let saludo = 'Hola a todos';
+//let saludo = 'Hola a todos';
 
-const load = (mensaje) => console.log(mensaje);
+//const load = (mensaje) => console.log(mensaje);
 
 class country{
     constructor(pais){

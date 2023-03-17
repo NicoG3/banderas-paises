@@ -11,47 +11,170 @@
   <link rel="stylesheet" href="./css/site.css" />
 </head>
 
-<body id="usuario">
+<header class="container-fluid bg-primary d-flex justify-content-center"></header>
+<body>
   <!--h1 onclick="load(saludo);">Hola</h1-->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+  <!--=======================================-->
+  <!--ENCABEZADO-->
+  <!--=======================================-->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light p-3" id="menu">
+
+  <!--=======================================-->
+  <!--BARRA DE MENU-->
+  <!--=======================================-->
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Banderas del mundo</a>
+      <a class="navbar-brand" href="#">
+       <span class="text-primary fs-5 fw-bold">ExpertD.</span> 
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Equipo</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="#">Contacto</a>
           </li>
+          
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="email" placeholder="correo electronico" aria-label="email">
+          <button class="btn btn-primary btn-primary-outline-success" type="button">Suscribete</button>
         </form>
       </div>
     </div>
   </nav>
+
+  <!--=======================================-->
+  <!--SLIDER DE IMAGENES-->
+  <!--=======================================-->
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./Img/Dryma.png" class="d-block w-100" alt="slide1">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./Img/Dryma perfil.png" class="d-block w-100" alt="slide2">
+      </div>
+
+      <div class="carousel-item">
+        <img src="./Img/Dryma atras.png" class="d-block w-100" alt="slide3">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--=======================================-->
+  <!--PRESENTACION-->
+  <!--=======================================-->
+
+  <section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Un accesorio especial para ti de 
+      forma que puedas <span class="text-primary">controlar</span></h1>
+    
+    <p class="p-3 fs-4"><span class="text-primary">ExpertD.</span> es donde 
+      te ayudamos a alcanzar tus metas</p>
+  </section>
+
+  <!--=======================================-->
+  <!--SERVICIOS-->
+  <!--=======================================-->
+
+  <section class="container-fluid">
+    <div class="row w-75 mx-auto my-5 servicio-fila">
+      <div class="col-lg-6 col-md-12 col-ms-12 my-5 icono-wrp">
+        <img src="./Img/Car.jpg" alt="Carro" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Diseños</h3>
+          <p class="px-4">Para verse mejor que todos</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-ms-12 my-5 icono-wrp">
+        <img src="./Img/Car.jpg" alt="Carro" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Diseños 2</h3>
+          <p class="px-4">Para verse mejor que todos</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-ms-12 my-5 icono-wrp">
+        <img src="./Img/Car.jpg" alt="Carro" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Diseños 2</h3>
+          <p class="px-4">Para verse mejor que todos</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-ms-12 my-5 icono-wrp">
+        <img src="./Img/Car.jpg" alt="Carro" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Diseños 2</h3>
+          <p class="px-4">Para verse mejor que todos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=======================================-->
+  <!--A CERCA DE NOSOTROS-->
+  <!--=======================================-->
+
+  <section>
+    <div class="w-75 m-auto text-center" id="equipo">
+      <h1 class="mb-5 fs-2">Equipo pequeño con <span class="text-primary">resultados grandes</span></h1>
+      <p class="fs-4">simpre buscamos personas adecuadas para que trabajen con nosotros por siempre</p>
+    </div>
+
+    <div class="mt-5 text-center">
+      <img class="img-fluid" src="./Img/Car.jpg" alt="kwid">
+    </div>
+
+    <div id="local">
+      <div class="mapa">
+        <div class="wrapper">
+          <h2>Ubicado en Bogota</h2>
+          <h2 class="text-primary mb-4" id="typewriter"></h2>
+          <p class="fs-5 text-body">Somos la unica empresa 
+            qhe hace estas cosas por eso es tan importante
+          </p>
+          <section class="d-flex" id="numeros_local">
+            <div>
+              <p class="text-primary">248</p>
+              <p>Dias de sol</p>
+            </div>
+            <div>
+              <p class="text-primary">100%</p>
+              <p>Aprobado</p>
+            </div>
+          </section>
+        </div>
+
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <div class="container">
     <br />

@@ -1,5 +1,104 @@
-#usuario {
+
+#cuerpo {
     background-color: #7fffd4;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: 'Monserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*======================BARRA DE MENU PRINCIPAL===============*/
+
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*======================SLIDER DE IMAGENES===============*/
+
+.carousel-inner{
+    max-height: 39rem;
+}
+
+
+/*======================PANTALLAS MEDIANAS===============*/
+@media (max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
+
+    #equipo p {
+        display: none;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+/*======================PANTALLAS PEQUEÑAS===============*/
+
+@media (max-width:576px){
+    
+    .icono-wrp{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+/*======================MAPA===============*/
+
+.mapa{
+    /*background: url(../Img/Car.jpg);*/
+    width: 100%;
+    height: 500px;
+}
+
+#local{
+    background: white;
+    padding-bottom: 300px;
+    display:flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+/*======================PANTALLA ANCHA===============*/
+@media(max-width:1200px) {
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+/*======================SECCION EQUIPO===============*/
+#numeros_local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#numeros_local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros_local div:not(:first-child){
+    padding-left: 20px;
+}
 }
